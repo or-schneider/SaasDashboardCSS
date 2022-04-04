@@ -1,0 +1,20 @@
+@import "./date-format-dropdown/date-format-dropdown.css";
+
+.dashboard-apps {
+  display: flex;
+  flex-direction: row;
+  background-color: #F5F6F8;
+  width: 100%;
+  padding: max(8px,min(2%,32px));
+
+  gap: max(8px,min(2%,32px));
+  justify-content: space-evenly;
+
+  flex-grow: 1;
+  flex-wrap: wrap;
+}
+
+.dashboard-app {
+  box-shadow: rgba(99, 99, 99, 0.15) 2px 2px 8px 2px;
+}
+/* .dashboard-tasks-date-format-dropdown-container { */

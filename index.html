@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./dashboard_menu/dashboard_menu.css" />
+    <link rel="stylesheet" href="./dashboard_search/dashboard_search.css" />
+    <link rel="stylesheet" href="./dashboard_apps/dashboard-apps.css" />
+    <link
+      rel="stylesheet"
+      href="./dashboard_apps/dashboard-graphs/dashboard-graphs.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./dashboard_apps/dashboard-tasks/dashboard-tasks.css"
+    />
+    <link rel="stylesheet" href="./dashboard_menu/dashboard_menu_mobile.css" />
+    <link rel="stylesheet" href="./dashboard_apps/dashboard_apps_mobile.css" />
+    <link
+      rel="stylesheet"
+      href="./dashboard_apps/dashboard-tasks/dashboard_tasks_mobile.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="dashboard">
+      <div class="top-divider"></div>
+      <div class="dashboard-menu">
+        <div class="dashboard-menu-first-part">
+          <h1 class="dashboard-menu-title dashboard-menu-element">SaaS Kit</h1>
+          <div class="account-container dashboard-menu-element">
+            <div class="account-image-container">
+              <img
+                class="account-image"
+                src="./dashboard_menu/account_image.svg"
+                alt=""
+              />
+            </div>
+            <div class="account-details">
+              <p class="account-name">Sierra Ferguson</p>
+              <p class="account-email">s.ferguson@gmail.com</p>
+            </div>
+          </div>
+          <nav class="dashboard-menu-element">
+            <a
+              class="dashboard-menu-button-container"
+              draggable="false"
+              href="#"
+            >
+              <div class="dashboard-menu-button-glyph-container">
+                <img
+                  draggable="false"
+                  class="dashboard-menu-button-glyph"
+                  src="./dashboard_menu/dashboard_menu_glyphs/dashboard_glyph.svg"
+                  alt=""
+                />
+              </div>
+              <span class="dashboard-menu-text">Dashboard</span>
+            </a>
+          </nav>
+          <nav class="dashboard-menu-element">
+            <a
+              class="dashboard-menu-button-container"
+              draggable="false"
+              href="#"
+            >
+              <div class="dashboard-menu-button-glyph-container">
+                <img
+                  draggable="false"
+                  class="dashboard-menu-button-glyph"
+                  src="./dashboard_menu/dashboard_menu_glyphs/tasks_glyph.svg"
+                  alt=""
+                />
+              </div>
+              <span class="dashboard-menu-text">Tasks</span>
+            </a>
+          </nav>
+          <nav class="dashboard-menu-element">
+            <a
+              class="dashboard-menu-button-container"
+              draggable="false"
+              href="#"
+            >
+              <div class="dashboard-menu-button-glyph-container">
+                <img
+                  draggable="false"
+                  class="dashboard-menu-button-glyph"
+                  src="./dashboard_menu/dashboard_menu_glyphs/email_glyph.svg"
+                  alt=""
+                />
+              </div>
+              <span class="dashboard-menu-text">Emails</span>
+            </a>
+          </nav>
+          <nav class="dashboard-menu-element">
+            <a
+              class="dashboard-menu-button-container"
+              draggable="false"
+              href="#"
+            >
+              <div class="dashboard-menu-button-glyph-container">
+                <img
+                  draggable="false"
+                  class="dashboard-menu-button-glyph"
+                  src="./dashboard_menu/dashboard_menu_glyphs/contacts_glyph.svg"
+                  alt=""
+                />
+              </div>
+              <span class="dashboard-menu-text">Contacts</span>
+            </a>
+          </nav>
+          <nav class="dashboard-menu-element">
+            <a
+              class="dashboard-menu-button-container"
+              draggable="false"
+              href="#"
+            >
+              <div class="dashboard-menu-button-glyph-container">
+                <img
+                  draggable="false"
+                  class="dashboard-menu-button-glyph"
+                  src="./dashboard_menu/dashboard_menu_glyphs/chat_glyph.svg"
+                  alt=""
+                />
+              </div>
+              <span class="dashboard-menu-text">Chat</span>
+            </a>
+          </nav>
+          <nav class="dashboard-menu-element">
+            <a
+              class="dashboard-menu-button-container"
+              draggable="false"
+              href="#"
+            >
+              <div class="dashboard-menu-button-glyph-container">
+                <img
+                  draggable="false"
+                  class="dashboard-menu-button-glyph"
+                  src="./dashboard_menu/dashboard_menu_glyphs/deals_glyph.svg"
+                  alt=""
+                />
+              </div>
+              <span class="dashboard-menu-text">Deals</span>
+            </a>
+          </nav>
+
+          <div class="dashboard-menu-seperator-line"></div>
+          <nav class="dashboard-menu-element">
+            <a
+              class="dashboard-menu-button-container"
+              draggable="false"
+              href="#"
+            >
+              <div class="dashboard-menu-button-glyph-container">
+                <img
+                  draggable="false"
+                  class="dashboard-menu-button-glyph"
+                  src="./dashboard_menu/dashboard_menu_glyphs/settings_glyph.svg"
+                  alt=""
+                />
+              </div>
+              <span class="dashboard-menu-text">Settings</span>
+            </a>
+          </nav>
+          <nav class="dashboard-menu-toggle_sidebar dashboard-menu-element">
+            <a
+              class="dashboard-menu-button-container"
+              draggable="false"
+              href="#"
+            >
+              <div class="dashboard-menu-button-glyph-container">
+                <img
+                  draggable="false"
+                  class="dashboard-menu-button-glyph"
+                  src="./dashboard_menu/dashboard_menu_glyphs/toggle_sidebar_glyph.svg"
+                  alt=""
+                />
+              </div>
+              <span class="dashboard-menu-toggle_sidebar-text"
+                >Toggle sidebar</span
+              >
+            </a>
+          </nav>
+        </div>
+      </div>
+      <div class="dashboard-body">
+        <div class="dashboard-search">
+          <div class="dashboard-search-bar-container">
+            <img
+              src="./dashboard_search/dashboard_search_glyphs/magnifying_glass_glyph.svg"
+              alt=""
+              class="dashboard-search-glyph"
+            />
+            <input
+              class="dashboard-search-input"
+              type="text"
+              placeholder="Global search"
+            />
+          </div>
+
+          <img
+            src="./dashboard_search/dashboard_search_glyphs/alert_bell_glyph.svg"
+            alt=""
+            class="dashboard-search-glyph dashboard-search-alert-bell"
+          />
+        </div>
+        <div class="dashboard-apps">
+          <div class="dashboard-tasks dashboard-app">
+            <div class="dashboard-tasks-element">
+              <div class="dashboard-tasks-completion-status">
+                <div class="dashboard-tasks-completion-header">
+                  <div class="dashboard-tasks-completion-status-text">
+                    8 task completed out of 10
+                  </div>
+                  <div class="dashboard-app-date-format-dropdown-container">
+                    <div class="dashboard-app-date-format-dropdown-label">
+                      Show:
+                    </div>
+                    <div class="dashboard-app-date-format-dropdown-select">
+                      This week
+                      <img
+                        src="./dashboard_apps/date-format-dropdown/dropdown_arrow_glyph.svg"
+                        alt=""
+                        class="dashboard-app-date-format-dropdown-glyph"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="dashboard-tasks-completion-progress-bar">
+                  <div
+                    class="dashboard-tasks-completion-progress-bar-fill"
+                  ></div>
+                </div>
+              </div>
+              <div class="dashboard-tasks-calendar">
+                <div class="dashboard-tasks-calendar-title">
+                  23 December, Sunday
+                </div>
+                <div class="dashboard-tasks-calendar-body">
+                  <div class="dashboard-tasks-calendar-date-day">
+                    <div class="dashboard-tasks-calendar-date-day-name">
+                      Sun
+                    </div>
+                    <div
+                      class="dashboard-tasks-calendar-date-day-numeric dashboard-tasks-calendar-date-day-numeric-today"
+                    >
+                      23
+                    </div>
+                  </div>
+                  <div class="dashboard-tasks-calendar-date-day">
+                    <div class="dashboard-tasks-calendar-date-day-name">
+                      Mon
+                    </div>
+                    <div class="dashboard-tasks-calendar-date-day-numeric">
+                      24
+                    </div>
+                  </div>
+                  <div class="dashboard-tasks-calendar-date-day">
+                    <div class="dashboard-tasks-calendar-date-day-name">
+                      Tue
+                    </div>
+                    <div class="dashboard-tasks-calendar-date-day-numeric">
+                      25
+                    </div>
+                  </div>
+                  <div class="dashboard-tasks-calendar-date-day">
+                    <div class="dashboard-tasks-calendar-date-day-name">
+                      Wed
+                    </div>
+                    <div class="dashboard-tasks-calendar-date-day-numeric">
+                      26
+                    </div>
+                  </div>
+                  <div class="dashboard-tasks-calendar-date-day">
+                    <div class="dashboard-tasks-calendar-date-day-name">
+                      Thu
+                    </div>
+                    <div class="dashboard-tasks-calendar-date-day-numeric">
+                      27
+                    </div>
+                  </div>
+                  <div class="dashboard-tasks-calendar-date-day">
+                    <div class="dashboard-tasks-calendar-date-day-name">
+                      Fri
+                    </div>
+                    <div class="dashboard-tasks-calendar-date-day-numeric">
+                      28
+                    </div>
+                  </div>
+                  <div class="dashboard-tasks-calendar-date-day">
+                    <div class="dashboard-tasks-calendar-date-day-name">
+                      Sat
+                    </div>
+                    <div class="dashboard-tasks-calendar-date-day-numeric">
+                      29
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="dashboard-tasks-divider"></div>
+            <div class="dashboard-tasks-body">
+              <div class="dashboard-tasks-body-task">
+                <div class="dashboard-tasks-body-task-header">
+                  <div class="dashboard-tasks-body-task-title">
+                    Send benefit review by Sunday
+                  </div>
+                  <div class="dashboard-tasks-body-task-profile-type">
+                    Reminder
+                  </div>
+                </div>
+                <div class="dashboard-tasks-body-task-date-container">
+                  <div class="dashboard-tasks-body-task-date-label">
+                    Due date:
+                  </div>
+                  <div class="dashboard-tasks-body-task-date">
+                    December 23, 2018
+                  </div>
+                </div>
+                <div class="dashboard-tasks-body-task-footer">
+                  <img
+                    src="./dashboard_apps/dashboard-tasks/dashboard_tasks_images/george_fields.png"
+                    alt=""
+                  />
+                  <div class="dashboard-tasks-body-task-profile-name">
+                    George Fields
+                  </div>
+                  <div
+                    class="dashboard-tasks-body-task-profile-status-container"
+                  >
+                    <div
+                      class="dashboard-tasks-body-task-profile-status dashboard-tasks-body-task-profile-status-completed"
+                    >
+                      Completed
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dashboard-tasks-body-task">
+                <div class="dashboard-tasks-body-task-header">
+                  <div class="dashboard-tasks-body-task-title">
+                    Invite to office meet-up
+                  </div>
+                  <div class="dashboard-tasks-body-task-profile-type">Call</div>
+                </div>
+                <div class="dashboard-tasks-body-task-date-container">
+                  <div class="dashboard-tasks-body-task-date-label">
+                    Due date:
+                  </div>
+                  <div class="dashboard-tasks-body-task-date">
+                    December 23, 2018
+                  </div>
+                </div>
+                <div class="dashboard-tasks-body-task-footer">
+                  <img
+                    src="./dashboard_apps/dashboard-tasks/dashboard_tasks_images/rebbeca_moore.png"
+                    alt=""
+                  />
+                  <div class="dashboard-tasks-body-task-profile-name">
+                    Rebecca Moore
+                  </div>
+                  <div
+                    class="dashboard-tasks-body-task-profile-status-container"
+                  >
+                    <img
+                      class="dashboard-tasks-body-task-profile-status-glyph"
+                      src="./dashboard_apps/dashboard-tasks/dashboard_tasks_images/edit.svg"
+                      alt=""
+                    />
+                    <img
+                      class="dashboard-tasks-body-task-profile-status-glyph"
+                      src="./dashboard_apps/dashboard-tasks/dashboard_tasks_images/delete.svg"
+                      alt=""
+                    />
+                    <div
+                      class="dashboard-tasks-body-task-profile-status dashboard-tasks-body-task-profile-status-ended"
+                    >
+                      Ended
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dashboard-tasks-body-task">
+                <div class="dashboard-tasks-body-task-header">
+                  <div class="dashboard-tasks-body-task-title">
+                    Office meet-up
+                  </div>
+                  <div class="dashboard-tasks-body-task-profile-type">
+                    Event
+                  </div>
+                </div>
+                <div class="dashboard-tasks-body-task-date-container">
+                  <div class="dashboard-tasks-body-task-date-label">
+                    Due date:
+                  </div>
+                  <div class="dashboard-tasks-body-task-date">
+                    December 23, 2018
+                  </div>
+                </div>
+                <div class="dashboard-tasks-body-task-footer">
+                  <img
+                    src="./dashboard_apps/dashboard-tasks/dashboard_tasks_images/lindsey_stroud.png"
+                    alt=""
+                  />
+                  <div class="dashboard-tasks-body-task-profile-name">
+                    Lindsey Stroud
+                  </div>
+                  <div
+                    class="dashboard-tasks-body-task-profile-status-container"
+                  >
+                    <div
+                      class="dashboard-tasks-body-task-profile-status dashboard-tasks-body-task-profile-status-completed"
+                    >
+                      Completed
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="dashboard-tasks-show-more">Show more</button>
+            </div>
+          </div>
+          <div class="dashboard-graphs">
+            <div
+              class="dashboard-graphs-deals dashboard-graphs-graph dashboard-app"
+            >
+              <div class="dashboard-graphs-graph-header">
+                <h1 class="dashboard-graphs-graph-title">Deals</h1>
+                <div class="dashboard-app-date-format-dropdown-container">
+                  <div class="dashboard-app-date-format-dropdown-label">
+                    Show:
+                  </div>
+                  <div class="dashboard-app-date-format-dropdown-select">
+                    Monthly
+                    <img
+                      src="./dashboard_apps/date-format-dropdown/dropdown_arrow_glyph.svg"
+                      alt=""
+                      class="dashboard-app-date-format-dropdown-glyph"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="dashboard-graphs-graph-divider"></div>
+              <div class="dashboard-graphs-graph-body">
+                <div class="dashboard-graphs-graph-legend">
+                  <div class="dashboard-graphs-graph-legend-entry">
+                    <svg
+                      class="dashboard-graphs-graph-marker"
+                      width="8"
+                      height="8"
+                      viewBox="0 0 8 8"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle
+                        class="dashboard-graphs-graph-marker-deals-color"
+                        cx="4"
+                        cy="4"
+                        r="3"
+                        stroke="#FFB946"
+                        stroke-width="2"
+                      />
+                    </svg>
+                    <p class="dashboard-graphs-graph-legend-entry-text">
+                      Closed deals
+                    </p>
+                  </div>
+                </div>
+                <img
+                  class="dashboard-graphs-graph-image"
+                  src="./dashboard_apps/dashboard-graphs/images/deals_graph.svg"
+                  alt="Deals graph"
+                />
+              </div>
+            </div>
+            <div
+              class="dashboard-graphs-deals dashboard-graphs-graph dashboard-app"
+            >
+              <div class="dashboard-graphs-graph-header">
+                <h1 class="dashboard-graphs-graph-title">Tasks</h1>
+                <div class="dashboard-app-date-format-dropdown-container">
+                  <div class="dashboard-app-date-format-dropdown-label">
+                    Show:
+                  </div>
+                  <div class="dashboard-app-date-format-dropdown-select">
+                    This week
+                    <img
+                      src="./dashboard_apps/date-format-dropdown/dropdown_arrow_glyph.svg"
+                      alt=""
+                      class="dashboard-app-date-format-dropdown-glyph"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="dashboard-graphs-graph-divider"></div>
+              <div class="dashboard-graphs-graph-body">
+                <div class="dashboard-graphs-task-graph-body">
+                  <img
+                    class="dashboard-graphs-graph-image"
+                    src="./dashboard_apps/dashboard-graphs/images/tasks_chart.svg"
+                    alt="Tasks chart"
+                  />
+                  <div class="dashboard-graphs-graph-legend">
+                    <div class="dashboard-graphs-graph-legend-entry">
+                      <svg
+                        class="dashboard-graphs-graph-marker"
+                        width="8"
+                        height="8"
+                        viewBox="0 0 8 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle
+                          class="dashboard-graphs-graph-marker-tasks-active-color"
+                          cx="4"
+                          cy="4"
+                          r="3"
+                          stroke="#FFB946"
+                          stroke-width="2"
+                        />
+                      </svg>
+                      <p class="dashboard-graphs-graph-legend-entry-text">
+                        Active
+                      </p>
+                    </div>
+                    <div class="dashboard-graphs-graph-legend-entry">
+                      <svg
+                        class="dashboard-graphs-graph-marker"
+                        width="8"
+                        height="8"
+                        viewBox="0 0 8 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle
+                          class="dashboard-graphs-graph-marker-tasks-completed-color"
+                          cx="4"
+                          cy="4"
+                          r="3"
+                          stroke="#FFB946"
+                          stroke-width="2"
+                        />
+                      </svg>
+                      <p class="dashboard-graphs-graph-legend-entry-text">
+                        Completed
+                      </p>
+                    </div>
+                    <div class="dashboard-graphs-graph-legend-entry">
+                      <svg
+                        class="dashboard-graphs-graph-marker"
+                        width="8"
+                        height="8"
+                        viewBox="0 0 8 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle
+                          class="dashboard-graphs-graph-marker-tasks-ended-color"
+                          cx="4"
+                          cy="4"
+                          r="3"
+                          stroke="#FFB946"
+                          stroke-width="2"
+                        />
+                      </svg>
+                      <p class="dashboard-graphs-graph-legend-entry-text">
+                        Ended
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

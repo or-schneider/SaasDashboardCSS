@@ -1,0 +1,254 @@
+.dashboard-tasks {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  /* width: 60%; */
+  border-radius: 4px;
+  align-items: center;
+  justify-content: start;
+  min-width: 210px;
+  flex-grow: 100;
+}
+.dashboard-tasks-element {
+  padding: 16px 16px;
+  width: 100%;
+}
+.dashboard-tasks-divider {
+  height: 1px;
+  background-color: #ebeff2;
+  width: 100%;
+}
+/* completion-status */
+.dashboard-tasks-completion-status {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  /* padding: 0 16px; */
+}
+.dashboard-tasks-completion-status-text {
+  color: #334d6e;
+  font-size: 13px;
+  font-weight: 500;
+  display: inline-block;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.dashboard-tasks-completion-header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 0 auto;
+
+  gap: 8px;
+  white-space: nowrap;
+}
+.dashboard-tasks-completion-progress-bar {
+  background-color: #ebeff2;
+  width: 100%;
+  height: 4px;
+  border-radius: 20px;
+}
+.dashboard-tasks-completion-progress-bar-fill {
+  background-color: #2ed47a;
+  width: 75%;
+  height: 4px;
+  border-radius: 20px;
+}
+/* Calendar */
+.dashboard-tasks-calendar {
+  --empty: "";
+}
+.dashboard-tasks-calendar-title {
+  font-weight: 500px;
+  font-size: 15px;
+  color: #192a3e;
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
+.dashboard-tasks-calendar-body {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+  align-items: center;
+}
+.dashboard-tasks-calendar-date-day {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.dashboard-tasks-calendar-date-day:hover
+  .dashboard-tasks-calendar-date-day-name,
+.dashboard-tasks-calendar-date-day:hover
+  .dashboard-tasks-calendar-date-day-numeric {
+  color: #109cf1;
+  opacity: 1;
+}
+.dashboard-tasks-calendar-date-day:hover
+  .dashboard-tasks-calendar-date-day-numeric-today {
+  background-color: #109cf1;
+  border-radius: 100%;
+  color: white;
+}
+.dashboard-tasks-calendar-date-day-name {
+  opacity: 0.5;
+  color: #334d6e;
+  font-size: 13px;
+  font-weight: 500;
+}
+.dashboard-tasks-calendar-date-day-numeric {
+  color: #4c5862;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  padding: 2px 4px;
+}
+.dashboard-tasks-calendar-date-day-numeric-today {
+  background-color: #109cf1;
+  border-radius: 100%;
+  color: white;
+
+}
+.dashboard-tasks-calendar-date-day-numeric:hover {
+  color: #000000;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+}
+/* Body */
+.dashboard-tasks-body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: flex-start;
+
+  gap: 16px;
+  padding: 0px 16px;
+  padding-top: 16px;
+}
+.dashboard-tasks-body-task {
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+
+  padding: 10px;
+}
+.dashboard-tasks-body-task:hover {
+  box-shadow: rgba(99, 99, 99, 0.5) 0px 2px 8px 0px;
+  cursor: pointer;
+}
+.dashboard-tasks-body-task-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  column-gap: 16px;
+  flex-wrap: wrap-reverse;
+}
+
+.dashboard-tasks-body-task-date-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+}
+.dashboard-tasks-body-task-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+}
+.dashboard-tasks-body-task-title {
+  color: #323c47;
+  font-size: 15px;
+  font-weight: 500;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-grow: 1;
+  flex-basis: 200px;
+  width: 1px;
+}
+
+.dashboard-tasks-body-task-profile-type {
+  color: #90a0b7;
+  font-size: 12px;
+}
+.dashboard-tasks-body-task-date-label {
+  color: #4c5862;
+  opacity: 0.5;
+  font-size: 13px;
+}
+.dashboard-tasks-body-task-date {
+  color: #4c5862;
+  font-size: 13px;
+}
+.dashboard-tasks-body-task-profile-type {
+  color: #90a0b7;
+  font-size: 12px;
+}
+.dashboard-tasks-body-task-profile {
+  --pass:""
+}
+.dashboard-tasks-body-task-profile-picture {
+  --pass:""
+}
+.dashboard-tasks-body-task-profile-name {
+  color: #707683;
+  font-size: 13px;
+  white-space: nowrap;
+}
+.dashboard-tasks-body-task-profile-status-container {
+  display: flex;
+  margin-left: auto;
+
+  gap: 8px;
+}
+.dashboard-tasks-body-task-profile-status {
+  color: white;
+  font-size: 11px;
+  padding: 3px 10px;
+  border-radius: 4px;
+  background-color: #333eda;
+
+  width: 80px;
+  text-align: center;
+}
+.dashboard-tasks-body-task-profile-status-completed {
+  background-color: #2ed47a;
+}
+.dashboard-tasks-body-task-profile-status-ended {
+  background-color: #f7685b;
+}
+.dashboard-tasks-body-task-profile-status-glyph:hover {
+  filter: saturate(10) hue-rotate(12deg) brightness(0.9);
+  /* filter: brightness(0.5) sepia(1) hue-rotate(160deg) saturate(700%); */
+}
+
+.dashboard-tasks-show-more {
+  width: 80px;
+  margin-bottom: 10px;
+  color: #109cf1;
+  background-color: transparent;
+  border: none;
+  font-weight: 600;
+  font-size: 13px;
+  align-self: center;
+  cursor: pointer;
+}
+.dashboard-tasks-show-more:hover{
+  filter: brightness(1.15);
+}

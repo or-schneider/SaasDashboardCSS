@@ -1,0 +1,29 @@
+.dashboard-app-date-format-dropdown-container {
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+}
+.dashboard-app-date-format-dropdown-label {
+  font-size: 12px;
+  font-weight: 400;
+  color: #6a707e;
+}
+.dashboard-app-date-format-dropdown-select {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 400;
+  color: #109cf1;
+  cursor: pointer;
+}
+.dashboard-app-date-format-dropdown-select:hover{
+  filter: brightness(1.15);
+}
+.dashboard-app-date-format-dropdown-glyph {
+  width: 7px;
+  height: 4px;
+  margin-bottom: 1px;
+}

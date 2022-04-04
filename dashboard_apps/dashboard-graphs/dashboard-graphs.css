@@ -1,0 +1,79 @@
+.dashboard-graphs {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: max(8px,min(2%,32px));
+}
+.dashboard-graphs-graph {
+  background-color: white;
+  width: 100%;
+  border-radius: 4px;
+  padding: 14px 0;
+  flex-grow: 1;
+
+  display: flex;
+  flex-direction: column;
+}
+.dashboard-graphs-graph-header {
+  display: flex;
+  width: 100%;
+  padding: 0px 16px;
+}
+.dashboard-graphs-graph-title {
+  font-weight: 500;
+  font-size: 15px;
+  display: inline-block;
+}
+.dashboard-graphs-graph-divider {
+  height: 1px;
+  background-color: #ebeff2;
+  width: 100%;
+  margin: 8px 0;
+}
+.dashboard-graphs-graph-body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0px 16px;
+
+  gap: 8px;
+
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.dashboard-graphs-graph-legend {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.dashboard-graphs-graph-legend-entry {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.dashboard-graphs-graph-marker-deals-color {
+  stroke: #109cf1;
+}
+.dashboard-graphs-graph-legend-entry-text {
+  font-size: 10px;
+  color: #192a3e;
+}
+.dashboard-graphs-graph-image {
+  width: inherit;
+  max-height: 28vh;
+}
+.dashboard-graphs-task-graph-body {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 4px;
+}
+.dashboard-graphs-graph-marker-tasks-active-color {
+  stroke: #ffb946;
+}
+.dashboard-graphs-graph-marker-tasks-completed-color {
+  stroke: #2ed47a;
+}
+.dashboard-graphs-graph-marker-tasks-ended-color {
+  stroke: #f7685b;
+}
